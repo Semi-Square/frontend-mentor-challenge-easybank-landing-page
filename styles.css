@@ -188,6 +188,7 @@ header {
 
 .articles img {
 	min-height: 50%;
+	object-fit: cover;
 }
 
 .article-text {

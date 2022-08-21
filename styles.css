@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+main {
+	position: relative;
+	overflow-x: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	padding: 15px 35px;
+	border-radius: 25px;
+	background-image: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+button:hover {
+	opacity: 0.6;
+	transition: 0.5s;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding-block: 0;
+	padding-inline: 10em;
+	width: 100%;
+	position: fixed;
+	z-index: 333;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.header-mobile {
+	display: none;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.menu ul {
+	display: flex;
+	column-gap: 30px;
+	color: gray;
+	font-weight: 700;
+}
+
+.menu ul li {
+	padding: 22px 0;
+	cursor: pointer;
+}
+
+.menu ul li a:hover {
+	border-bottom: 5px solid hsl(136, 65%, 51%);
+	padding-bottom: 20px;
+	transition: 0.3s;
+}
+
+.mobile-top,
+.mobile-top-2 {
+	display: none;
+}
+
+.top {
+	background-color: hsl(0, 0%, 98%);
+	display: flex;
+	background-image: url('assets/images/bg-intro-desktop.svg');
+	background-repeat: no-repeat;
+	background-position: right -24vw bottom -15vh;
+}
+
+.top img {
+	position: absolute;
+	top: -6.5vh;
+	right: -6.5vw;
+	z-index: 1;
+}
+
+.top-left-section {
+	padding: 12em 8em 12em 10em;
+	max-width: 40%;
+}
+
+.title {
+	font-size: 3rem;
+}
+
+.subtitle {
+	font-size: 1.05rem;
+	margin-top: 2em;
+	color: rgb(160, 160, 160);
+}
+
+.num-2 {
+	margin-top: 2em;
+}
+
+.middle {
+	background-color: hsl(220, 16%, 96%);
+	padding: 6em 10em;
+}
+
+.sec-title {
+	font-size: 2.4em;
+	font-weight: 400;
+	margin-bottom: 0.6em;
+}
+
+.sec-subtitle {
+	font-size: 1em;
+	font-weight: 500;
+	color: gray;
+}
+
+.sec-points {
+	display: flex;
+	margin-top: 3em;
+	column-gap: 3em;
+}
+
+.point img {
+	margin-top: 2em;
+}
+
+.point-title {
+	margin-top: 2em;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.point-subtitle {
+	margin-top: 2em;
+	font-size: 1em;
+	font-weight: 500;
+	color: gray;
+}
+
+.bottom {
+	background-color: hsl(0, 0%, 98%);
+	padding: 6em 10em;
+}
+
+.bottom-title {
+	font-size: 2.4em;
+	font-weight: 400;
+	margin-bottom: 0.6em;
+}
+
+.article-container {
+	display: flex;
+	margin-top: 3em;
+	column-gap: 3em;
+}
+
+.articles {
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.articles img {
+	min-height: 50%;
+}
+
+.article-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.text-container {
+	padding: 2em;
+}
+
+.article-author {
+	color: gray;
+	font-size: 0.8em;
+}
+
+.article-name {
+	font-size: 1.3em;
+	font-weight: 500;
+	margin-top: 0.8em;
+	cursor: pointer;
+}
+
+.article-name:hover {
+	color: hsl(136, 65%, 51%);
+}
+
+.article-desc {
+	font-size: 1em;
+	font-weight: 500;
+	color: gray;
+	margin-top: 1em;
+}
+
+.footer {
+	background-color: hsl(233, 26%, 24%);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4em 10em;
+}
+
+.col-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 3.8em;
+}
+
+.social-media-icons {
+	display: flex;
+	column-gap: 0.6em;
+}
+
+.s-icon {
+	cursor: pointer;
+}
+
+.s-icon:hover path {
+	fill: hsl(136, 65%, 51%);
+}
+
+.col-2,
+.col-3 {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+	color: white;
+	font-weight: 500;
+}
+
+.link {
+	cursor: pointer;
+}
+
+.link:hover {
+	color: hsl(136, 65%, 51%);
+}
+
+.col-4 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	row-gap: 1.6em;
+	color: rgb(180, 180, 180);
+}
+
+@media (max-width: 1040px) {
+	.header-desktop {
+		display: none;
+	}
+
+	.header-mobile {
+		display: flex;
+		background-color: white;
+		position: fixed;
+		z-index: 333;
+		justify-content: space-between;
+		padding: 22px;
+		margin: 0;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	}
+
+	.mobile-menu {
+		background-color: white;
+		position: fixed;
+		text-align: center;
+		border-radius: 6px;
+		font-weight: bold;
+		z-index: 100;
+		width: 90%;
+		top: 80px;
+		right: 5%;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+		font-size: 1.1em;
+	}
+
+	.mobile-menu li {
+		padding: 1.2em 6em;
+	}
+
+	.mobile-menu li:hover {
+		color: hsl(136, 65%, 51%);;
+	}
+
+	#menu-icon {
+		cursor: pointer;
+	}
+
+	.menu-on {
+		display: block;
+	}
+
+	.top {
+		display: none;
+		overflow-x: hidden;
+	}
+
+	.mobile-top {
+		padding: 0 2em 5em 2em;
+		text-align: center;
+		display: block;
+	}
+
+	.mobile-top-2 {
+		display: block;
+		background-image: url('assets/images/bg-intro-mobile.svg');
+		background-repeat: no-repeat;
+		background-position-y: -3vh;
+		background-size: cover;
+		padding-inline: 1em;
+		height: fit-content;
+	}
+
+	.mobile-top-2 img {
+		position: relative;
+		display: block;
+		width: 100%;
+		top: -13vh;
+	}
+
+	.top-left-section {
+		padding: 2em 2em 5em 2em;
+		text-align: center;
+		display: block;
+	}
+
+	.middle {
+		text-align: center;
+		padding: 5em 2em 5em 2em;
+	}
+
+	.sec-points {
+		flex-direction: column;
+	}
+
+	.bottom {
+		text-align: center;
+		padding: 5em 2em 5em 2em;
+	}
+
+	.article-container {
+		flex-direction: column;
+	}
+
+	.articles {
+		text-align: left;
+		margin-top: 2em;
+	}
+
+	.articles img {
+		max-width: 100%;
+	}
+
+	.footer {
+		text-align: center;
+		flex-direction: column;
+		padding: 5em 2em 5em 2em;
+		width: 100%;
+	}
+
+	.social-media-icons {
+		padding-top: 1.5em;
+	}
+
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4 {
+		justify-content: center;
+		align-items: center;
+		row-gap: 1em;
+	}
+
+	.col-2 {
+		padding-top: 2em;
+	}
+
+	.col-3 {
+		padding-top: 1em;
+	}
+
+	.col-4 {
+		padding-top: 2em;
+	}
+}
